@@ -42,6 +42,8 @@
 		E7C308492016E7D600FEDC12 /* GMYLiveListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C308472016E7D600FEDC12 /* GMYLiveListViewController.xib */; };
 		E7C3084D2016E9F100FEDC12 /* GMYLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C3084B2016E9F100FEDC12 /* GMYLiveCell.m */; };
 		E7C3084E2016E9F100FEDC12 /* GMYLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C3084C2016E9F100FEDC12 /* GMYLiveCell.xib */; };
+		E7C308C8201742CB00FEDC12 /* GMYCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C308C6201742CB00FEDC12 /* GMYCaptureViewController.m */; };
+		E7C308C9201742CB00FEDC12 /* GMYCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C308C7201742CB00FEDC12 /* GMYCaptureViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,9 @@
 		E7C3084A2016E9F100FEDC12 /* GMYLiveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMYLiveCell.h; sourceTree = "<group>"; };
 		E7C3084B2016E9F100FEDC12 /* GMYLiveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMYLiveCell.m; sourceTree = "<group>"; };
 		E7C3084C2016E9F100FEDC12 /* GMYLiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GMYLiveCell.xib; sourceTree = "<group>"; };
+		E7C308C5201742CB00FEDC12 /* GMYCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMYCaptureViewController.h; sourceTree = "<group>"; };
+		E7C308C6201742CB00FEDC12 /* GMYCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMYCaptureViewController.m; sourceTree = "<group>"; };
+		E7C308C7201742CB00FEDC12 /* GMYCaptureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GMYCaptureViewController.xib; sourceTree = "<group>"; };
 		E94F766A55A92865906C42B5 /* libPods-IJKMediaPlayerDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IJKMediaPlayerDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F61F790A89B2073F0C5A44 /* libPods-IJKMediaPlayerDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IJKMediaPlayerDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -270,6 +275,9 @@
 				E7C308272016E1C700FEDC12 /* IJKMediaFramework.framework */,
 				E7C308282016E1C700FEDC12 /* ViewController.h */,
 				E7C308292016E1C700FEDC12 /* ViewController.m */,
+				E7C308C5201742CB00FEDC12 /* GMYCaptureViewController.h */,
+				E7C308C6201742CB00FEDC12 /* GMYCaptureViewController.m */,
+				E7C308C7201742CB00FEDC12 /* GMYCaptureViewController.xib */,
 				E7C308452016E7D600FEDC12 /* GMYLiveListViewController.h */,
 				E7C308462016E7D600FEDC12 /* GMYLiveListViewController.m */,
 				E7C308472016E7D600FEDC12 /* GMYLiveListViewController.xib */,
@@ -397,6 +405,7 @@
 			files = (
 				E7C308492016E7D600FEDC12 /* GMYLiveListViewController.xib in Resources */,
 				E7C3084E2016E9F100FEDC12 /* GMYLiveCell.xib in Resources */,
+				E7C308C9201742CB00FEDC12 /* GMYCaptureViewController.xib in Resources */,
 				E7C307DA2016D28200FEDC12 /* LaunchScreen.storyboard in Resources */,
 				E7C307D72016D28200FEDC12 /* Assets.xcassets in Resources */,
 				E7C308442016E74B00FEDC12 /* GMYLiveViewController.xib in Resources */,
@@ -578,6 +587,7 @@
 			files = (
 				E7C307DD2016D28200FEDC12 /* main.m in Sources */,
 				E7C3082A2016E1C700FEDC12 /* GMYCardModel.m in Sources */,
+				E7C308C8201742CB00FEDC12 /* GMYCaptureViewController.m in Sources */,
 				E7C308302016E1C700FEDC12 /* ViewController.m in Sources */,
 				E7C3082C2016E1C700FEDC12 /* GMYDataModel.m in Sources */,
 				E7C308482016E7D600FEDC12 /* GMYLiveListViewController.m in Sources */,
@@ -750,13 +760,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KKPC692SBP;
+				DEVELOPMENT_TEAM = Q39EVKJ36C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IJKMediaPlayerDemo",
 					"$(PROJECT_DIR)/IJKMediaPlayerDemo/Live",
 				);
 				INFOPLIST_FILE = IJKMediaPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmy.IJKMediaPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -770,13 +781,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KKPC692SBP;
+				DEVELOPMENT_TEAM = Q39EVKJ36C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IJKMediaPlayerDemo",
 					"$(PROJECT_DIR)/IJKMediaPlayerDemo/Live",
 				);
 				INFOPLIST_FILE = IJKMediaPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmy.IJKMediaPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

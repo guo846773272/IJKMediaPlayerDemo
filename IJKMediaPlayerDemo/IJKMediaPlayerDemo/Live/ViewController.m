@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import "GMYLiveListViewController.h"
+#import "GMYCaptureViewController.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,10 @@
 
 @implementation ViewController
 
+- (IBAction)captureVideoClick:(id)sender {
+    GMYCaptureViewController *captureVC = [[GMYCaptureViewController alloc] init];
+    [self.navigationController pushViewController:captureVC animated:YES];
+}
 
 
 - (IBAction)skipToLiveListVCClick:(id)sender {
